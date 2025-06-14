@@ -86,7 +86,6 @@ export interface Options {
   files?: Partial<Options.Files>,
   hooks?: Partial<Options.Hooks>,
   interface?: Partial<Options.Interface>,
-  katex?: boolean,
   keybindings?: {
     shiftTab?: boolean,
     tab?: boolean,
@@ -111,7 +110,6 @@ export interface OptionsResolved {
   files: Required<Options.Files>,
   hooks: Required<Options.Hooks>,
   interface: Required<Options.Interface>,
-  katex: boolean,
   keybindings: {
     shiftTab: boolean,
     tab: boolean,

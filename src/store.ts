@@ -1,5 +1,4 @@
 import { createSignal } from 'solid-js'
-import { katex } from '/plugins/katex'
 import { createExtensions } from '/src/extensions'
 import { override } from '/src/utils/merge'
 import { makeQueue } from '/src/utils/queue'
@@ -32,7 +31,6 @@ export const blankState = (): InkInternal.StateResolved => {
       spellcheck: true,
       toolbar: false,
     },
-    katex: false,
     keybindings: {
       // Todo: Set these to false by default. https://codemirror.net/examples/tab
       tab: true,
@@ -40,9 +38,7 @@ export const blankState = (): InkInternal.StateResolved => {
     },
     lists: false,
     placeholder: '',
-    plugins: [
-      katex(),
-    ],
+    plugins: [],
     readability: false,
     search: true,
     selections: [],

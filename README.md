@@ -251,7 +251,6 @@ const options = {
     spellcheck: true,
     toolbar: false,
   },
-  katex: false,
   keybindings: {
     // Todo: Set these to false by default. https://codemirror.net/examples/tab
     tab: true,
@@ -259,9 +258,7 @@ const options = {
   },
   lists: false,
   placeholder: '',
-  plugins: [
-    katex(),
-  ],
+  plugins: [],
   readability: false,
   search: true,
   selections: [],
