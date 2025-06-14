@@ -1,3 +1,7 @@
+This fork removes the katex plugin, since there's no way to opt-out of it being included the the final bundle (not treeshake-able).
+
+---
+
 [![NPM Package](https://img.shields.io/npm/v/ink-mde?color=blue&style=for-the-badge)](https://npmjs.com/package/ink-mde)
 [![License](https://img.shields.io/github/license/davidmyersdev/ink-mde?color=blue&style=for-the-badge)](https://github.com/davidmyersdev/ink-mde/blob/main/LICENSE)
 [![Chat on Discord](https://img.shields.io/discord/776165182560403547?color=blue&style=for-the-badge)](https://voracious.link/chat)
@@ -251,6 +255,7 @@ const options = {
     spellcheck: true,
     toolbar: false,
   },
+  katex: false,
   keybindings: {
     // Todo: Set these to false by default. https://codemirror.net/examples/tab
     tab: true,
@@ -258,7 +263,9 @@ const options = {
   },
   lists: false,
   placeholder: '',
-  plugins: [],
+  plugins: [
+    katex(),
+  ],
   readability: false,
   search: true,
   selections: [],
